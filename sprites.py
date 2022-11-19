@@ -19,7 +19,7 @@ LEVELHEIGHT = [413.75, 311.25, 198.75, 86.25, 0]
 LEVELWIDTH = [56.25, 14.0625, 14.0625, 14.0625, 14.0625]
 
 
-PLAYERSPRITE = pygame.transform.scale(loadify(os.path.join('Assets', 'placeholdersprite.png')), (60,60))
+PLAYERSPRITE = pygame.transform.scale(loadify(os.path.join('Assets', 'adultFront.png')), (40,100))
 QBOXSPRITE = pygame.transform.scale(loadify(os.path.join('Assets', 'qboxsprite.jpg')), (30,30))
 FLOORSPRITES = ['lvl1floor.jpg', 'lvl1floor.jpg', 'lvl1floor.jpg', 'lvl1floor.jpg', 'lvl1floor.jpg']
 
