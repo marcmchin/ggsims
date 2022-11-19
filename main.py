@@ -305,7 +305,7 @@ def play():
                         
                 elif selectedpart:
                     if event.key == pygame.key.key_code(str(QP.get_answer())):
-                        CHCK.appear()
+                        CHCK.heartappear()
                         for entity in spritegroup:
                             displaysurface.blit(entity.image, entity.rect)
                             entity.rect.midbottom = entity.pos
@@ -322,7 +322,7 @@ def play():
                             CHCK.disappear()
                             QP.set_question(2, random.randint(2, qanda.QuestionPopup.get_question_count(2)), 0)
                     elif event.key == pygame.K_a or event.key == pygame.K_b or event.key == pygame.K_c or event.key == pygame.K_d:
-                        UNCHCK.appear()
+                        UNCHCK.heartappear()
                         for entity in spritegroup:
                             displaysurface.blit(entity.image, entity.rect)
                             entity.rect.midbottom = entity.pos
@@ -335,7 +335,7 @@ def play():
                         
                         time.sleep(1)
                         UNCHCK.disappear()
-                        QP.set_question(2, random.randint(1, qanda.QuestionPopup.get_question_count(2)), 0)
+                        QP.set_question(2, random.randint(2, qanda.QuestionPopup.get_question_count(2)), 0)
                         
                     
 
