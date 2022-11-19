@@ -303,7 +303,7 @@ def play():
                         selectedpart = True
                         
                         
-                else:
+                elif selectedpart:
                     if event.key == pygame.key.key_code(str(QP.get_answer())):
                         CHCK.appear()
                         for entity in spritegroup:
